@@ -175,3 +175,23 @@ nav a:hover {
       content: url('images/bouldernogif.png');
     }
   }
+  @media (min-width: 768px) {
+    .photo-gallery,
+    .photo-gallerybread,
+    .photo-gallerysoup,
+    .photo-gallerytahoe,
+    .photo-galleryfalls,
+    .photo-galleryboulder {
+        grid-template-columns: repeat(3, 1fr);
+}
+nav ul {
+    flex-direction: row;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+nav li:hover > ul {
+    display: block;
+}
+}
