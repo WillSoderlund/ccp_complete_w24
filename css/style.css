@@ -20,8 +20,8 @@ h1 {
     margin: 20px auto;
     border: 5px solid #3399FF;
     text-align: center;
-    background-color: #FFFF99;
-    color: #333333;
+    background-color: black;
+    color: white;
 }
 h3 {
     border-left: 4px solid #4CAF50;
@@ -174,8 +174,8 @@ nav a:hover {
     animated-boulder {
       content: url('images/bouldernogif.png');
     }
-  }
-  @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
     .photo-gallery,
     .photo-gallerybread,
     .photo-gallerysoup,
@@ -194,4 +194,55 @@ nav a:hover {
 nav li:hover > ul {
     display: block;
 }
+}
+h1, h2, h3 {
+    transition: color 0.3s ease;
+}
+h1:hover, h2:hover, h3:hover {
+    color: red;
+    text-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-item {
+        padding: 10px 15px;
+    }
+    body {
+        font-size: 18px;
+    }
+    h1, h2, h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    img {
+        transition: transform 0.3s ease-in-out;
+    }
+    img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .animated-tahoe, .animated-falls, .animated-boulder {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+    }
+    .animated-tahoe img, .animated-falls img, .animated-boulder img {
+        width: 100%;
+        height: auto;
+    }
+    .photo-gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .photo-gallery-grid img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 }
