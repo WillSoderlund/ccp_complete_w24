@@ -69,7 +69,7 @@ nav a:hover {
 .nav-item.active {
     font-style: italic;
     text-decoration: underline;
-    border-bottom: 5px solid red;
+    border: 5px solid red;
 }
 .skip-link {
     position: absolute;
@@ -244,5 +244,13 @@ h1:hover, h2:hover, h3:hover {
         width: 100%;
         height: auto;
         display: block;
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        background-color: lightblue;
+    }
+    .photo-gallery, .photo-gallerybread, .photo-gallerysoup, .photo-gallerytahoe, .photo-galleryfalls, .photo-galleryboulder {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
