@@ -256,9 +256,9 @@ h1:hover, h2:hover, h3:hover {
 }
 .card {
     perspective: 1000px;
-    width: 600px; /* Adjust to match your image's width */
-    height: 338px; /* Adjust to match your image's height */
-    margin: 0 auto; /* Center the card if needed */
+    width: 600px;
+    height: 338px;
+    margin: 0 auto;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
@@ -290,9 +290,9 @@ h1:hover, h2:hover, h3:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FFF; /* Text color */
-    font-size: 24px; /* Adjust as necessary */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)); /* Gradient overlay for better text readability */
+    color: #FFF;
+    font-size: 24px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
     transform: rotateY(180deg);
 }
 
@@ -300,6 +300,6 @@ h1:hover, h2:hover, h3:hover {
     content: "";
     background-image: url('images/Download-Welcome-PNG-Transparent.png');
     background-size: cover;
-    filter: grayscale(100%) contrast(120%) brightness(80%); /* Decorative filter */
+    filter: grayscale(100%) contrast(120%) brightness(80%);
     transform: rotateY(180deg);
 }
