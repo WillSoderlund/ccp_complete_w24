@@ -254,3 +254,33 @@ h1:hover, h2:hover, h3:hover {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+.photo-gallery figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+/* New styles for the hover effect */
+.photo-gallery figure:hover img {
+    transform: scale(1.1);
+}
+/* Overlay styling */
+.photo-gallery figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    color: white;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+.photo-gallery figure:hover figcaption {
+    transform: translateY(0);
+}
